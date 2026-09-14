@@ -5,6 +5,7 @@ import { clerkMiddleware } from "@clerk/express";
 import cors from "cors";
 import fs from "fs";
 import path from "path";
+import clerkWebhook from "./webhooks/clerk.webhook.js";
 
 const app = express();
 const publicDir = path.join(process.cwd(), "public");
