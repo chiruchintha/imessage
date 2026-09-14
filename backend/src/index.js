@@ -9,6 +9,12 @@ import path from "path";
 const app = express();
 const publicDir = path.join(process.cwd(), "public");
 
+app.use(
+  "/api/webhook/clerk",
+  express.raw({ type: "application/json" }),
+  clerkWebhook,
+);
+
 app.use(express.json());
 app.use(cors());
 app.use(clerkMiddleware());
