@@ -5,6 +5,7 @@ function App() {
   return (
     <>
       <header>
+        <h1>chat app</h1>
         <Show when="signed-out">
           <SignInButton />
           <SignUpButton />
