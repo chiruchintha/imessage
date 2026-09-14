@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch src/index.js",
-    "build":"rm -rf dist && cp -R src dist"
+    "build":"rm -rf dist && cp -R src dist",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
